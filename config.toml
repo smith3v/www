@@ -14,7 +14,7 @@ theme = "hugo-resume"
     description = "Head of IT Operations @ecwid. DevOps follower. Cloud advocate lvl 8. Security addicted lvl 3. Proud daddy lvl 2. Co-host @hangops_ru."
     favicon = "images/favicon.ico"
     # what sections
-    showSkills = true
+    showSkills = false
     showProjects = false
     showOpenSource = false
     showPublications = false
