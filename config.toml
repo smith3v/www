@@ -6,12 +6,12 @@ theme = "hugo-resume"
 [params]
     firstName = "Slava"
     lastName = "Kuznetsov"
-    address = "Ulyanovsk, Russia"
+    address = "Haarlem, Netherlands"
     # phone = "1-555-555-1234"
-    contactNote = "Engineering Teamlead"
+    contactNote = "SRE Teamlead"
     profileImage = "images/profile.jpg"
     email = "neuron@smith3v.com"
-    description = "Head of IT Operations @ecwid. DevOps follower. Cloud advocate lvl 8. Security addicted lvl 3. Proud daddy lvl 2. Co-host @hangops_ru."
+    description = "SRE Teamlead. Ex-Head of IT Operations @ecwid. Program committee member @devoopsconf & @DevOpsConfRus. Proud daddy lvl 2. DevOps follower. Cloud advocate lvl 8. Security addicted lvl 3. Proud daddy lvl 2."
     favicon = "images/favicon.ico"
     # what sections
     showSkills = false
