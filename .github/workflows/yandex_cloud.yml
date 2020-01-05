@@ -4,7 +4,6 @@ on:
   push:
     branches:
     - master
-    - smith3v-ci-setup
 
 jobs:
   build:
@@ -31,7 +30,7 @@ jobs:
       with:
         args: --theme=hugo-resume --ignoreCache
     
-    - name: S3 Sync
+    - name: Publish update
       uses: jakejarvis/s3-sync-action@v0.5.0
       with:
         args: --acl public-read --follow-symlinks --delete
