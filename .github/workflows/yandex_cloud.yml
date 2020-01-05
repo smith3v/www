@@ -1,0 +1,21 @@
+name: CI
+
+on:  
+  push:
+    branches:
+    - master
+    - smith3v-ci-setup
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Update theme
+      uses: srt32/git-actions@master
+      with:
+        args: "cd themes && git clone https://github.com/eddiewebb/hugo-resume.git"
+    - name: Build pages
+      uses: srt32/hugo-action@v0.0.3
+
