@@ -12,13 +12,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Clean build directory
+      run: rm -rf public
+
+    - name: Clean cache directory
+      run: rm -rf resources
+
+    - name: Checkout
+      uses: actions/checkout@v1
+
     - name: Update theme
       uses: srt32/git-actions@master
       with:
-        args: "mkdir -p themes && cd themes && git clone https://github.com/eddiewebb/hugo-resume.git"
+        args: "cd themes && git clone https://github.com/eddiewebb/hugo-resume.git"
+
     - name: Build pages
       uses: srt32/hugo-action@v0.0.3
       with:
         args: --theme=hugo-resume --ignoreCache
+    
     - name: print result
       run: ls -R public
