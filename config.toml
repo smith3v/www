@@ -33,7 +33,7 @@ theme = "hugo-resume"
 
 [[params.handles]]
     name = "GitHub"
-    link = "https://github.com/smith3v/"
+    link = "https://github.com/smith3v"
 
 #[[params.handles]]
 #    name = "Bitbucket"
