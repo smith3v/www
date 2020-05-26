@@ -23,7 +23,7 @@ jobs:
     - name: Update theme
       uses: srt32/git-actions@master
       with:
-        args: "cd themes && git clone https://github.com/eddiewebb/hugo-resume.git"
+        args: "cd themes && git clone https://github.com/eddiewebb/hugo-resume.git && cd hugo-resume && git checkout 03879d6"
 
     - name: Build pages
       uses: srt32/hugo-action@v0.0.3
