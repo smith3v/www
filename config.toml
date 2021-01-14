@@ -1,7 +1,7 @@
 baseURL = "http://www.smith3v.com/"
 languageCode = "en-us"
 title = "Slava @smith3v Kuznetsov"
-theme = "hugo-resume"
+theme = "hugo-resume-smith3v"
 
 [params]
     firstName = "Slava"
@@ -11,7 +11,7 @@ theme = "hugo-resume"
     contactNote = "SRE Teamlead"
     profileImage = "images/profile.jpg"
     email = "neuron@smith3v.com"
-    description = "SRE Teamlead. Ex-Head of IT Operations @ecwid. Program committee member @devoopsconf & @DevOpsConfRus. Proud daddy lvl 2. DevOps follower. Cloud advocate lvl 8. Security addicted lvl 3. Proud daddy lvl 2."
+    description = "Teamlead & Site Reliability Engineer"
     favicon = "images/favicon.ico"
     # what sections
     showSkills = false
@@ -52,6 +52,10 @@ theme = "hugo-resume"
 [[params.handles]]
     name = "LinkedIn"
     link = "https://www.linkedin.com/in/neuron/"
+
+[[params.handles]]
+    name = "Strava"
+    link = "https://www.strava.com/athletes/4615821"
 
 #[params.google.analytics]
 #    trackerID = "XX-123446-01"

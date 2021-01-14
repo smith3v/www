@@ -4,3 +4,6 @@
 [submodule "themes/hugo-resume"]
 	path = themes/hugo-resume
 	url = https://github.com/eddiewebb/hugo-resume.git
+[submodule "themes/hugo-resume-smith3v"]
+	path = themes/hugo-resume-smith3v
+	url = git@github.com:smith3v/hugo-resume.git
