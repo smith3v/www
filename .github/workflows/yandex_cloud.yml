@@ -1,6 +1,6 @@
 name: CI
 
-on:  
+on:
   push:
     branches:
     - master
@@ -23,13 +23,13 @@ jobs:
     - name: Update theme
       uses: srt32/git-actions@master
       with:
-        args: "cd themes && git clone https://github.com/eddiewebb/hugo-resume.git && cd hugo-resume && git checkout 03879d6"
+        args: "cd themes && git clone https://github.com/smith3v/hugo-resume.git hugo-resume-smith3v"
 
     - name: Build pages
       uses: srt32/hugo-action@v0.0.3
       with:
         args: --theme=hugo-resume --ignoreCache
-    
+
     - name: Publish update
       uses: jakejarvis/s3-sync-action@v0.5.0
       with:
@@ -40,4 +40,4 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.YANDEX_S3_SECRET_ACCESS_KEY }}
         AWS_REGION: 'ru-central1'
         AWS_S3_ENDPOINT: 'https://storage.yandexcloud.net'
-        SOURCE_DIR: 'public' 
+        SOURCE_DIR: 'public'
