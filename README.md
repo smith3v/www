@@ -28,15 +28,6 @@ Build:
 hugo
 ```
 
-### 3. Optional: initialize legacy submodules
-
-Some old/alternative themes in `themes/` are still submodules. They are not required for the active site theme, but can be initialized if needed:
-
-```bash
-git submodule sync --recursive
-git submodule update --init --recursive
-```
-
 ## Theme workflow (git subtree)
 
 `themes/adritian-free-hugo-theme` is managed as a subtree (not a submodule).
