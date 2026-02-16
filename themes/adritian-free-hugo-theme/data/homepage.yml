@@ -95,11 +95,11 @@ experience:
   title: "Experience"
   description: >
       <p class="lead">
-      I am currently an Engineering Manager at Booking.com, leading a team of 10 engineers responsible for highly critical, high-loaded services. We own the Secrets Management, Configuration Management, and Certificate Management capabilities.
+      At Booking.com, I lead a team of 10 engineers responsible for core reliability and security capabilities: secret management, configuration management, and certificate management. Our platforms power highly loaded, business-critical services, with a focus on resilience, safety, and operational simplicity at scale.
       </p>
 
       <p class="lead">
-      Before joining Booking.com, I spent about 10 years at Ecwid.com. Together with that team, I grew from a part-time System Administrator to Head of IT Operations, responsible for the company's production and development infrastructure.
+      Before Booking.com, I spent 10 years at Ecwid and grew from System Administrator to Head of IT Operations. I helped build a strong Ops organization and introduced key engineering practices, including monitoring, log management, configuration management, and one-button upgrade automation.
       </p>
   button:
     icon: "icon-linkedin-fill"
