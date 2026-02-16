@@ -6,46 +6,63 @@ Hugo-based site with automatic deployment to S3-like service.
 
 ## Local development
 
-### 1. Initialize submodules
+### 1. Install Node dependencies
 
-Themes are stored as git submodules, so start with:
+The active theme uses PostCSS via Hugo Pipes. Install dependencies first:
+
+```bash
+npm ci
+```
+
+### 2. Run with Hugo (extended)
+
+The site is verified with Homebrew Hugo `v0.155.3+extended+withdeploy`.
+
+```bash
+hugo server --disableFastRender
+```
+
+Build:
+
+```bash
+hugo
+```
+
+### 3. Optional: initialize legacy submodules
+
+Some old/alternative themes in `themes/` are still submodules. They are not required for the active site theme, but can be initialized if needed:
 
 ```bash
 git submodule sync --recursive
 git submodule update --init --recursive
 ```
 
-### 2. Install Node dependencies
+## Theme workflow (git subtree)
 
-This theme uses PostCSS via Hugo Pipes. Install dependencies first:
+`themes/adritian-free-hugo-theme` is managed as a subtree (not a submodule).
+
+### One-time setup
 
 ```bash
-npm ci
+git remote add adritian-theme git@github.com:smith3v/adritian-free-hugo-theme.git
 ```
 
-### 3. Use Hugo v0.128.1
-
-This site works with Hugo `v0.128.1` (extended). Newer Homebrew Hugo versions fail on removed legacy APIs (`resources.ToCSS` and `resources.PostCSS`) used by the theme.
-
-You can test without changing your Homebrew-managed Hugo by downloading a separate binary and running it directly:
+If the remote already exists:
 
 ```bash
-mkdir -p /tmp/hugo-0.128.1
-cd /tmp/hugo-0.128.1
-curl -fL -o hugo_extended_0.128.1_darwin-universal.tar.gz \
-  https://github.com/gohugoio/hugo/releases/download/v0.128.1/hugo_extended_0.128.1_darwin-universal.tar.gz
-tar -xzf hugo_extended_0.128.1_darwin-universal.tar.gz
-./hugo version
+git remote set-url adritian-theme git@github.com:smith3v/adritian-free-hugo-theme.git
 ```
 
-Run the site:
+### Pull latest theme changes into this repo
 
 ```bash
-/tmp/hugo-0.128.1/hugo server --disableFastRender
+git subtree pull --prefix=themes/adritian-free-hugo-theme adritian-theme main --squash
 ```
 
-Build:
+### Push local theme changes back to theme repo
+
+Commit your changes in this repo first, then:
 
 ```bash
-/tmp/hugo-0.128.1/hugo
+git subtree push --prefix=themes/adritian-free-hugo-theme adritian-theme main
 ```
