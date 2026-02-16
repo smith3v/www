@@ -9,11 +9,11 @@ showcase:
   subtitle: ""
   description: >
     <p class="lead">
-    I am an experienced Engineering Manager specializing in Site Reliability Engineering. I live in the Netherlands and work for <a target='_blank' href="https://www.booking.com/">Booking.com</a>. And, I still like it 😉
+    I am an experienced Engineering Manager specializing in Site Reliability Engineering. I live in the Netherlands and work at <a target='_blank' href="https://www.booking.com/">Booking.com</a>, and I still enjoy it 😉.
     </p>
 
     <p class="lead">
-    I used to help with DevOps-related conferences in Russia as a Program Committee member. They were <a target='_blank' href="https://highload.co/">Highload++</a> in Moscow, <a target='_blank' href="https://devoops.ru/en/">DevOops</a> in St. Petersburg, <a target='_blank' href="https://ritfest.ru/2019/">RIT++ festival</a>, <a target='_blank' href="http://devopsconf.io/">DevOpsConf</a>. I saw the presentations which nobody will see.
+    I used to support DevOps-related conferences in Russia as a Program Committee member. These included <a target='_blank' href="https://highload.co/">Highload++</a> in Moscow, <a target='_blank' href="https://devoops.ru/en/">DevOops</a> in St. Petersburg, <a target='_blank' href="https://ritfest.ru/2019/">RIT++ festival</a>, and <a target='_blank' href="http://devopsconf.io/">DevOpsConf</a>. I reviewed talks before they were publicly presented.
     </p>
 
   image:
@@ -53,11 +53,11 @@ about:
   content: >
 
     <p class="lead">
-    For many years I'm focusing on <b>building high-performance SRE teams</b>. I have years of experience of nuturing the talents, enabling the grow and helping to achieve the goals. I care about the people personally and believe in a respectful direct feedback.
+    For many years, I have focused on <b>building high-performing SRE teams</b>. I have extensive experience nurturing talent, enabling growth, and helping teams achieve their goals. I care deeply about people and believe in respectful, direct feedback.
     </p>
 
     <p class="lead">
-    Becides leadership experience, I have deep knowledge of Linux internals to run services with 24x7x365 availability requirement. The most of my technical skills are related to the following areas: Linux, automation with Python and scripting, Configuration Management (Puppet, Chef, Ansible), Docker and Kubernetes, Postgresql.
+    Besides leadership experience, I have deep knowledge of Linux internals for running services with 24/7/365 availability requirements. My core technical skills include Linux, Python and shell automation, configuration management (Puppet, Chef, Ansible), Docker, Kubernetes, and PostgreSQL.
     </p>
 
     <p class="lead">
@@ -86,12 +86,12 @@ experience:
   enable: true
   title: "Experience"
   description: >
-      I joined Booking.com as a team leader for the Configuration Management team. Nowadays, I'm leading two teams, which responsible for high-critical high-loaded services.
+      I joined Booking.com as a team leader for the Configuration Management team. Nowadays, I'm leading two teams responsible for highly critical, high-load services.
 
-      Before joining Booking.com, I was for about 10 years in a startup called Ecwid.com. With Ecwid itself and it's awesome team, I grew from part-time System Administrator to Head of IT Operations department responsible to whole production and development infrastrucutre.
+      Before joining Booking.com, I spent about 10 years at Ecwid.com. Together with that team, I grew from a part-time System Administrator to Head of IT Operations, responsible for the company's production and development infrastructure.
   button:
     icon: "icon-linkedin-fill"
-    btnText: "Linkedin"
+    btnText: "LinkedIn"
     URL: "https://www.linkedin.com/in/neuron/"
   # button2:
   #   icon: "icon-profile-fill"
