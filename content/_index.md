@@ -8,9 +8,9 @@ outputs:
 - html
 - json
 ---
-Teamlead & Site Reliability Engineer.
-Ex-Head of IT Operations [@ecwid](https://www.ecwid.com/).
+Team Lead & Site Reliability Engineer.
+Former Head of IT Operations at [Ecwid](https://www.ecwid.com/).
 
-Program committee member [DevOpsConf](http://devopsconf.io/) & [DevOops](https://devoops.ru/en/) conferences.
+Program Committee member for [DevOpsConf](http://devopsconf.io/) and [DevOops](https://devoops.ru/en/).
 
 I run for health and happiness.

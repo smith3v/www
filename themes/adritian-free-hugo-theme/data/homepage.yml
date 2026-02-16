@@ -9,11 +9,11 @@ showcase:
   subtitle: ""
   description: >
     <p class="lead">
-    I am an experienced Engineering Manager specializing in Site Reliability Engineering. I live in the Netherlands and work for <a target='_blank' href="https://www.booking.com/">Booking.com</a>. And, I still like it 😉
+    I am an experienced Engineering Manager specializing in Site Reliability Engineering. I live in the Netherlands and work at <a target='_blank' href="https://www.booking.com/">Booking.com</a>, and I still enjoy it 😉.
     </p>
 
     <p class="lead">
-    I used to help with DevOps-related conferences in Russia as a Program Committee member. They were <a target='_blank' href="https://highload.co/">Highload++</a> in Moscow, <a target='_blank' href="https://devoops.ru/en/">DevOops</a> in St. Petersburg, <a target='_blank' href="https://ritfest.ru/2019/">RIT++ festival</a>, <a target='_blank' href="http://devopsconf.io/">DevOpsConf</a>. I saw the presentations which nobody will see.
+    I used to support DevOps-related conferences in Russia as a Program Committee member. These included <a target='_blank' href="https://highload.co/">Highload++</a> in Moscow, <a target='_blank' href="https://devoops.ru/en/">DevOops</a> in St. Petersburg, <a target='_blank' href="https://ritfest.ru/2019/">RIT++ festival</a>, and <a target='_blank' href="http://devopsconf.io/">DevOpsConf</a>. I reviewed talks before they were publicly presented.
     </p>
 
   image:
@@ -53,11 +53,19 @@ about:
   content: >
 
     <p class="lead">
-    For many years I'm focusing on <b>building high-performance SRE teams</b>. I have years of experience of nuturing the talents, enabling the grow and helping to achieve the goals. I care about the people personally and believe in a respectful direct feedback.
+    For many years, I have focused on <b>building high-performing SRE teams</b>. I have extensive experience nurturing talent, enabling growth, and helping teams achieve their goals. I care deeply about people and believe in respectful, direct feedback.
     </p>
 
     <p class="lead">
-    Becides leadership experience, I have deep knowledge of Linux internals to run services with 24x7x365 availability requirement. The most of my technical skills are related to the following areas: Linux, automation with Python and scripting, Configuration Management (Puppet, Chef, Ansible), Docker and Kubernetes, Postgresql.
+    Besides leadership experience, I have deep knowledge of Linux internals for running services with 24/7/365 availability requirements. My core technical skills include Linux, Python and shell automation, configuration management (Puppet, Chef, Ansible), Docker, Kubernetes, and PostgreSQL.
+    </p>
+
+    <p class="lead">
+    I actively leverage modern AI technologies whenever they bring clear value to my work: faster analysis, better automation, and more effective engineering workflows.
+    </p>
+
+    <p class="lead">
+    Outside of work, I also enjoy building with AI. One of my side projects is a Telegram bot: <a target='_blank' href="https://github.com/smith3v/tg-word-reminder">tg-word-reminder</a>. It helps users learn foreign-language vocabulary through repetitive practice using a Spaced Repetitive Review technique.
     </p>
 
     <p class="lead">
@@ -86,12 +94,16 @@ experience:
   enable: true
   title: "Experience"
   description: >
-      I joined Booking.com as a team leader for the Configuration Management team. Nowadays, I'm leading two teams, which responsible for high-critical high-loaded services.
+      <p class="lead">
+      At Booking.com, I lead a team of 10 engineers responsible for core reliability and security capabilities: secret management, configuration management, and certificate management. Our platforms power highly loaded, business-critical services, with a focus on resilience, safety, and operational simplicity at scale.
+      </p>
 
-      Before joining Booking.com, I was for about 10 years in a startup called Ecwid.com. With Ecwid itself and it's awesome team, I grew from part-time System Administrator to Head of IT Operations department responsible to whole production and development infrastrucutre.
+      <p class="lead">
+      Before Booking.com, I spent 10 years at Ecwid and grew from System Administrator to Head of IT Operations. I helped build a strong Ops organization and introduced key engineering practices, including monitoring, log management, configuration management, and one-button upgrade automation.
+      </p>
   button:
     icon: "icon-linkedin-fill"
-    btnText: "Linkedin"
+    btnText: "LinkedIn"
     URL: "https://www.linkedin.com/in/neuron/"
   # button2:
   #   icon: "icon-profile-fill"
