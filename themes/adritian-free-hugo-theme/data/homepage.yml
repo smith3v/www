@@ -94,7 +94,7 @@ experience:
   enable: true
   title: "Experience"
   description: >
-      I joined Booking.com as a team leader for the Configuration Management team. Nowadays, I'm leading two teams responsible for highly critical, high-load services.
+      I am currently an Engineering Manager at Booking.com, leading a team of 10 engineers responsible for highly critical, high-loaded services. We own the Secrets Management, Configuration Management, and Certificate Management capabilities.
 
       Before joining Booking.com, I spent about 10 years at Ecwid.com. Together with that team, I grew from a part-time System Administrator to Head of IT Operations, responsible for the company's production and development infrastructure.
   button:
