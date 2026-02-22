@@ -30,6 +30,11 @@ theme = "adritian-free-hugo-theme"
   URL = "#about"
   weight = 2
 
+  [[menu.header]]
+  name = "Easy Recall Bot"
+  URL = "/easy-recall-bot.html"
+  weight = 3
+
 #  [[menu.header]]
 #  name = "Portfolio"
 #  URL = "#portfolio"

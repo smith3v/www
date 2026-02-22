@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "head.html" . }} {{ partial "head_custom.html" . }}
+  </head>
+
+  <body class="easy-recall-body">
+    {{ partial "header.html" . }}
+
+    <main class="easy-recall-page">
+      <section class="container easy-recall-hero">
+        <div class="row align-items-center gy-4">
+          <div class="col-12 col-lg-6">
+            <p class="easy-recall-eyebrow">Pet Project</p>
+            <h1>{{ .Title }}</h1>
+            <p class="easy-recall-tagline">{{ .Params.tagline }}</p>
+            <div class="easy-recall-intro">{{ .Content }}</div>
+            <div class="easy-recall-actions">
+              <a
+                class="btn btn-primary"
+                href="{{ .Params.telegram_url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open in Telegram</a
+              >
+              <a
+                class="btn btn-outline-secondary"
+                href="{{ .Params.source_url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View source code</a
+              >
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <figure class="easy-recall-hero-visual">
+              <img
+                src="{{ .Params.hero_image | relURL }}"
+                alt="Easy Recall Bot main visual"
+                loading="eager"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="container easy-recall-section">
+        <h2>Why learners choose Easy Recall Bot</h2>
+        <div class="easy-recall-feature-grid">
+          {{ range .Params.features }}
+            <article class="easy-recall-feature-card">
+              <img src="{{ .image | relURL }}" alt="{{ .title }} icon" loading="lazy" />
+              <h3>{{ .title }}</h3>
+              <p>{{ .description }}</p>
+            </article>
+          {{ end }}
+        </div>
+      </section>
+
+      <section class="container easy-recall-section">
+        <div class="row gy-4 align-items-center">
+          <div class="col-12 col-lg-6">
+            <h2>How it works</h2>
+            <ol class="easy-recall-steps">
+              {{ range .Params.how_it_works }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ol>
+
+            <h2>What you can do</h2>
+            <ul class="easy-recall-capabilities">
+              {{ range .Params.capabilities }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          </div>
+          <div class="col-12 col-lg-6">
+            <figure class="easy-recall-preview">
+              <img
+                src="{{ .Params.preview_image | relURL }}"
+                alt="Easy Recall Bot in Telegram"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="container easy-recall-cta">
+        <h2>{{ .Params.cta_heading }}</h2>
+        <p>{{ .Params.cta_text }}</p>
+        <a
+          class="btn btn-primary"
+          href="{{ .Params.telegram_url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Open in Telegram</a
+        >
+      </section>
+    </main>
+
+    {{ partial "footer.html" . }} {{ partial "base-foot.html" . }}
+  </body>
+</html>
