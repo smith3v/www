@@ -53,27 +53,31 @@ about:
   content: >
 
     <p class="lead">
-    For many years, I have focused on <b>building high-performing SRE teams</b>. I have extensive experience nurturing talent, enabling growth, and helping teams achieve their goals. I care deeply about people and believe in respectful, direct feedback.
+    For many years, I have focused on <b>building high-performing SRE teams</b>. I care deeply about people, growth, and respectful, direct feedback.
     </p>
 
     <p class="lead">
-    Besides leadership experience, I have deep knowledge of Linux internals for running services with 24/7/365 availability requirements. My core technical skills include Linux, Python, Go and shell automation, configuration management (Puppet, Chef, Ansible), Docker, Kubernetes, and PostgreSQL.
+    My technical background is in Linux, Python, Go, shell automation, configuration management, Docker, Kubernetes, and PostgreSQL, with a strong focus on running reliable systems at scale.
     </p>
 
     <p class="lead">
-    I actively leverage modern AI technologies whenever they bring clear value to my work: faster analysis, better automation, and more effective engineering workflows.
+    I use AI when it creates clear value: faster analysis, better automation, and more effective engineering workflows.
     </p>
 
     <p class="lead">
-    Outside of work, I also enjoy building with AI. One of my side projects is a Telegram bot: <a href="/easy-recall-bot.html">Easy Recall Bot</a>. It helps users learn foreign-language vocabulary through repetitive practice using a Spaced Repetitive Review technique.
+    Outside of work, I enjoy building side projects with AI. One of them is a Telegram bot, <a href="/easy-recall-bot.html">Easy Recall Bot</a>, which helps users learn foreign-language vocabulary through spaced repetition.
     </p>
 
     <p class="lead">
-    Another pet project is <a target='_blank' href="https://github.com/smith3v/dash14">dash14</a>, a Go application for volleyball match control during live streams. It renders OBS-ready HTML overlays and exposes control through a Telegram bot, and it powers the score overlay on our <a target='_blank' href="https://www.youtube.com/@volleybal-h14/streams">team's game streams</a>. I build it together with a teammate from my volleyball team: we collaborate in GitHub through issues and detailed specifications, and the implementation is produced with Codex and Claude Code rather than written manually.
+    Another is <a target='_blank' href="https://github.com/smith3v/dash14">dash14</a>, a Go application for volleyball match control during live streams. It renders OBS-ready HTML overlays, is controlled through a Telegram bot, and powers the score overlay on our <a target='_blank' href="https://www.youtube.com/@volleybal-h14/streams">team's game streams</a>.
     </p>
 
     <p class="lead">
-    I love <a target='_blank' href="https://www.strava.com/athletes/4615821">to run and hike</a> for health and mindfulness. I also enjoy volleyball because it's a team game that requires constant communication and coordination, and it has a great community.
+    I build dash14 together with a teammate from my volleyball team. We collaborate in GitHub through issues and detailed specifications, and we use Codex and Claude Code to produce the implementation.
+    </p>
+
+    <p class="lead">
+    I love <a target='_blank' href="https://www.strava.com/athletes/4615821">running and hiking</a> for health and mindfulness. I also enjoy volleyball because it is a true team game built on communication, coordination, and support.
     </p>
 
   button:
