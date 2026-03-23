@@ -57,7 +57,7 @@ about:
     </p>
 
     <p class="lead">
-    Besides leadership experience, I have deep knowledge of Linux internals for running services with 24/7/365 availability requirements. My core technical skills include Linux, Python and shell automation, configuration management (Puppet, Chef, Ansible), Docker, Kubernetes, and PostgreSQL.
+    Besides leadership experience, I have deep knowledge of Linux internals for running services with 24/7/365 availability requirements. My core technical skills include Linux, Python, Go and shell automation, configuration management (Puppet, Chef, Ansible), Docker, Kubernetes, and PostgreSQL.
     </p>
 
     <p class="lead">
@@ -69,7 +69,11 @@ about:
     </p>
 
     <p class="lead">
-    I love <a target='_blank' href="https://www.strava.com/athletes/4615821">to run</a> for health and happiness.
+    Another pet project is <a target='_blank' href="https://github.com/smith3v/dash14">dash14</a>, a Go application for volleyball match control during live streams. It renders OBS-ready HTML overlays and exposes control through a Telegram bot, and it powers the score overlay on our <a target='_blank' href="https://www.youtube.com/@volleybal-h14/streams">team's game streams</a>. I build it together with a teammate from my volleyball team: we collaborate in GitHub through issues and detailed specifications, and the implementation is produced with Codex and Claude Code rather than written manually.
+    </p>
+
+    <p class="lead">
+    I love <a target='_blank' href="https://www.strava.com/athletes/4615821">to run and hike</a> for health and mindfulness. I also enjoy volleyball because it's a team game that requires constant communication and coordination, and it has a great community.
     </p>
 
   button:
