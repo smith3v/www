@@ -1,0 +1,54 @@
+{{- $src := .src -}}
+{{- $alt := .alt | default "" -}}
+{{- $sizes := .sizes | default "100vw" -}}
+{{- $widths := .widths | default (slice 480 768 1024) -}}
+{{- $loading := .loading | default "lazy" -}}
+{{- $decoding := .decoding | default "async" -}}
+{{- $resourcePath := strings.TrimPrefix "/" $src -}}
+{{- $image := resources.Get $resourcePath -}}
+
+{{- if $image -}}
+  {{- $webpSrcset := slice -}}
+  {{- $fallbackSrcset := slice -}}
+  {{- $fallbackImage := $image -}}
+  {{- range $widths -}}
+    {{- if le . $image.Width -}}
+      {{- $webp := $image.Resize (printf "%dx webp q76 Lanczos" .) -}}
+      {{- $fallback := $image.Resize (printf "%dx png Lanczos" .) -}}
+      {{- $webpSrcset = $webpSrcset | append (printf "%s %dw" $webp.RelPermalink .) -}}
+      {{- $fallbackSrcset = $fallbackSrcset | append (printf "%s %dw" $fallback.RelPermalink .) -}}
+      {{- $fallbackImage = $fallback -}}
+    {{- end -}}
+  {{- end -}}
+  <picture>
+    <source
+      srcset="{{ delimit $webpSrcset ", " }}"
+      sizes="{{ $sizes }}"
+      type="image/webp"
+    />
+    <source
+      srcset="{{ delimit $fallbackSrcset ", " }}"
+      sizes="{{ $sizes }}"
+      type="{{ $fallbackImage.MediaType.Type }}"
+    />
+    <img
+      src="{{ $fallbackImage.RelPermalink }}"
+      srcset="{{ delimit $fallbackSrcset ", " }}"
+      sizes="{{ $sizes }}"
+      width="{{ $fallbackImage.Width }}"
+      height="{{ $fallbackImage.Height }}"
+      alt="{{ $alt }}"
+      loading="{{ $loading }}"
+      decoding="{{ $decoding }}"
+      {{ with .fetchpriority }}fetchpriority="{{ . }}"{{ end }}
+    />
+  </picture>
+{{- else -}}
+  <img
+    src="{{ $src | relURL }}"
+    alt="{{ $alt }}"
+    loading="{{ $loading }}"
+    decoding="{{ $decoding }}"
+    {{ with .fetchpriority }}fetchpriority="{{ . }}"{{ end }}
+  />
+{{- end -}}

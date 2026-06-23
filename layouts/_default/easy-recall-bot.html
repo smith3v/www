@@ -34,11 +34,14 @@
           </div>
           <div class="col-12 col-lg-6">
             <figure class="easy-recall-hero-visual">
-              <img
-                src="{{ .Params.hero_image | relURL }}"
-                alt="Easy Recall Bot main visual"
-                loading="eager"
-              />
+              {{ partial "easy-recall-responsive-image.html" (dict
+                "src" .Params.hero_image
+                "alt" "Easy Recall Bot main visual"
+                "loading" "eager"
+                "fetchpriority" "high"
+                "sizes" "(min-width: 1200px) 516px, (min-width: 992px) 456px, calc(100vw - 48px)"
+                "widths" (slice 480 768 1024)
+              ) }}
             </figure>
           </div>
         </div>
@@ -49,7 +52,12 @@
         <div class="easy-recall-feature-grid">
           {{ range .Params.features }}
             <article class="easy-recall-feature-card">
-              <img src="{{ .image | relURL }}" alt="{{ .title }} icon" loading="lazy" />
+              {{ partial "easy-recall-responsive-image.html" (dict
+                "src" .image
+                "alt" (printf "%s icon" .title)
+                "sizes" "(min-width: 1200px) 334px, (min-width: 992px) 294px, calc(100vw - 64px)"
+                "widths" (slice 240 360 480 640)
+              ) }}
               <h3>{{ .title }}</h3>
               <p>{{ .description }}</p>
             </article>
@@ -76,11 +84,12 @@
           </div>
           <div class="col-12 col-lg-6">
             <figure class="easy-recall-preview">
-              <img
-                src="{{ .Params.preview_image | relURL }}"
-                alt="Easy Recall Bot in Telegram"
-                loading="lazy"
-              />
+              {{ partial "easy-recall-responsive-image.html" (dict
+                "src" .Params.preview_image
+                "alt" "Easy Recall Bot in Telegram"
+                "sizes" "(min-width: 1200px) 516px, (min-width: 992px) 456px, calc(100vw - 48px)"
+                "widths" (slice 480 768 1024)
+              ) }}
             </figure>
           </div>
         </div>
