@@ -1,5 +1,6 @@
 ---
 title: "Easy Recall Bot"
+description: "Easy Recall Bot helps language learners remember vocabulary with short, smart Telegram practice and spaced repetition."
 date: 2026-02-22T00:00:00-05:00
 url: "/easy-recall-bot.html"
 layout: "easy-recall-bot"
@@ -7,6 +8,7 @@ tagline: "Remember vocabulary with short, smart Telegram practice."
 telegram_url: "https://t.me/EasyRecallBot"
 source_url: "https://github.com/smith3v/easy-recall-bot"
 hero_image: "/images/easy-recall-bot/page-hero.png"
+og_image: "/images/easy-recall-bot/page-hero.png"
 preview_image: "/images/easy-recall-bot/telegram-welcome.png"
 features:
   - title: "Smart timing"
