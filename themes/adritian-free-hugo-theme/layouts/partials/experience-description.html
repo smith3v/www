@@ -16,6 +16,7 @@
         <i class="icon-arrow-right"></i
       ></a>
     </div>
+    {{ if .Site.Data.homepage.experience.button2.btnText }}
     <div class="col-12 col-lg-4">
       <a
         href="{{ .Site.Data.homepage.experience.button2.URL | absURL }}"
@@ -27,6 +28,7 @@
         {{ .Site.Data.homepage.experience.button2.btnText }}
       </a>
     </div>
+    {{ end }}
     {{ if .Site.Data.homepage.experience.button3.btnText }}
     <div class="col-12 col-lg-4">
       <a

@@ -124,8 +124,31 @@ li.book-content p{
     line-height: normal;
 }
 
+.about__profile-picture {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .about__profile-picture img{
     object-fit: contain;
+    max-width: 100%;
+    height: auto;
+}
+
+.about__profile-picture picture {
+    display: block;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .about__profile-picture {
+        flex: 0 0 50%;
+        max-width: 50%;
+        width: 50%;
+    }
 }
 
 .experience__company{

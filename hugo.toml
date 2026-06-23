@@ -69,6 +69,7 @@ theme = "adritian-free-hugo-theme"
 [params]
 
   sections = ["showcase", "about", "education", "experience", "contact"]
+  og_image = "/images/profile.jpg"
 
   homepageExperienceCount = 6
 

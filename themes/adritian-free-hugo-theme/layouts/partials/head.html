@@ -2,13 +2,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 <meta name="theme-color" content="#478079" >
+{{ $siteTitle := .Site.Data.homepage.head.title }}
+{{ $title := cond .IsHome $siteTitle (printf "%s | %s" .Title $siteTitle) }}
+{{ $description := .Description | default .Params.description | default .Site.Data.homepage.head.description }}
+{{ $canonical := .Permalink }}
+{{ $image := .Params.og_image | default .Site.Params.og_image }}
+{{ if and $image (not (hasPrefix $image "http")) }}
+  {{ $image = absURL $image }}
+{{ end }}
 
 {{ if .Site.Params.analytics.google_tag_manager.enabled }}
 <link rel="preconnect" href="https://www.googletagmanager.com">
 {{ end }}
 <!-- endinject -->
-<title>{{ .Site.Data.homepage.head.title }}</title>
-<meta name="description" content="{{ .Site.Data.homepage.head.description }}">
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ $canonical }}">
+<link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="48x48" href="{{ "favicon-48x48.png" | relURL }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ $canonical }}">
+{{ with $image }}<meta property="og:image" content="{{ . }}">{{ end }}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+{{ with $image }}<meta name="twitter:image" content="{{ . }}">{{ end }}
 
 {{ $critical := resources.Get "css/critical.css" | resources.Minify }}
 <style data-generator="critical-css">

@@ -9,16 +9,17 @@ showcase:
   subtitle: ""
   description: >
     <p class="lead">
-    I am an experienced Engineering Manager specializing in Site Reliability Engineering. I live in the Netherlands and work at <a target='_blank' href="https://www.booking.com/">Booking.com</a>, and I still enjoy it 😉.
+    I am an experienced Engineering Manager specializing in Site Reliability Engineering. I live in the Netherlands and work at <a target="_blank" rel="noopener noreferrer" href="https://www.booking.com/">Booking.com</a>, and I still enjoy it 😉.
     </p>
 
     <p class="lead">
-    I used to support DevOps-related conferences in Russia as a Program Committee member. These included <a target='_blank' href="https://highload.co/">Highload++</a> in Moscow, <a target='_blank' href="https://devoops.ru/en/">DevOops</a> in St. Petersburg, <a target='_blank' href="https://ritfest.ru/2019/">RIT++ festival</a>, and <a target='_blank' href="http://devopsconf.io/">DevOpsConf</a>. I reviewed talks before they were publicly presented.
+    I used to support DevOps-related conferences in Russia as a Program Committee member. These included <a target="_blank" rel="noopener noreferrer" href="https://highload.co/">Highload++</a> in Moscow, <a target="_blank" rel="noopener noreferrer" href="https://devoops.ru/en/">DevOops</a> in St. Petersburg, <a target="_blank" rel="noopener noreferrer" href="https://ritfest.ru/2019/">RIT++ festival</a>, and <a target="_blank" rel="noopener noreferrer" href="http://devopsconf.io/">DevOpsConf</a>. I reviewed talks before they were publicly presented.
     </p>
 
   image:
     x: "images/showcase/showcase-slava.png"
     _2x: "images/showcase/showcase-slava.png"
+    alt: "Slava Kuznetsov hiking in the mountains"
   imageMobile:
     x: "images/showcase/showcase-mobile.jpg"
 
@@ -69,7 +70,7 @@ about:
     </p>
 
     <p class="lead">
-    Another is <a target='_blank' href="https://github.com/smith3v/dash14">dash14</a>, a Go application for volleyball match control during live streams. It renders OBS-ready HTML overlays, is controlled through a Telegram bot, and powers the score overlay on our <a target='_blank' href="https://www.youtube.com/@volleybal-h14/streams">team's game streams</a>.
+    Another is <a target="_blank" rel="noopener noreferrer" href="https://github.com/smith3v/dash14">dash14</a>, a Go application for volleyball match control during live streams. It renders OBS-ready HTML overlays, is controlled through a Telegram bot, and powers the score overlay on our <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@volleybal-h14/streams">team's game streams</a>.
     </p>
 
     <p class="lead">
@@ -77,7 +78,7 @@ about:
     </p>
 
     <p class="lead">
-    I love <a target='_blank' href="https://www.strava.com/athletes/4615821">running and hiking</a> for health and mindfulness. I also enjoy volleyball because it is a true team game built on communication, coordination, and support.
+    I love <a target="_blank" rel="noopener noreferrer" href="https://www.strava.com/athletes/4615821">running and hiking</a> for health and mindfulness. I also enjoy volleyball because it is a true team game built on communication, coordination, and support.
     </p>
 
   button:
